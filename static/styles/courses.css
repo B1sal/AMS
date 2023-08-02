@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.courses-container {
+    width: 70rem;
+    height: 38rem;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.courses-container h4 {
+    color:#23c483;
+    font-size: x-large;
+}
+
+.course-details--students {
+    width: 20rem;
+    padding: 20px;
+    position: relative;
+    top: 3rem;
+    left: 9rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-details--subjects {
+    width: 20rem;
+    padding: 20px;
+    position: relative;
+    bottom: 3.9rem;
+    left: 38rem;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    width: 420px;
+    height: 260px;
+    transition: all 0.3s ease 0s; 
+}
+.course:hover{
+    transform: scale(1.1) translateY(-6px);  
+}
+
+.course h6 {
+    opacity: 0.6;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.course h2 {
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 10px 0;
+    width: 285px;
+}
+
+.course-preview {
+    color: #000;
+    padding: 30px;
+    max-width: 250px;
+}
+
+.course-preview i {
+    font-size: 8rem;
+    float: right;
+    margin: -80px -150px;
+}
+
+.course-info {
+    position: relative;
+    top: 165px;
+    left: -230px;
+    width: 100%;
+}
+
+.btn--attend {
+    padding:10px 35px;
+    text-transform: uppercase;
+    letter-spacing: 4.0px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #474747;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease 0s;
+    cursor: grab;
+    outline: none;
+}
+
+.btn--attend:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.6);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.btn--attend:active {
+    transform: translateY(-1px);
+}
+
+.js{
+    color: rgb(28, 98, 179);
+}

@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main>
+<div class="modal">
+    <div class="modal__container">
+      <h2>Edit Personal Informations</h2>
+        <form>
+          <li class="form-list__first-row">
+            <label> First Name</label>
+            <input type="text" name="fname" value="Bishal" disabled="" />
+            <label>Last Name</label>
+            <input type="text" name="lname" value="Shrestha" disabled="" />
+          </li>
+          <li class="form-list__second-row">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="" value="Haed35" required="" />
+            <label>Email</label>
+            <input type="text" name="email" placeholder="" value="bshalxsth@gmail.com" required="" />
+          </li>
+          <li class="form-list__third-row">
+            <label>Date of Birth</label>
+            <input type="text" name="cc_month" placeholder="MM"  pattern="\\d*" minlength="2" maxlength="2" value="08" disabled="" />
+            <input type="text" name="cc_day" placeholder="DD"  pattern="\\d*" minlength="2" maxlength="2" value="26" disabled="" />
+            <input type="text" name="cc_year" placeholder="YY"  pattern="\\d*" minlength="4" maxlength="4" value="1995" disabled="" />
+          </li>
+          <li class="form-list__forth-row">
+            <label>Gender</label>
+            <input type="text" name="gender" placeholder="" value="Male" disabled="" />
+            <label>Address</label>
+            <input type="text" name="address" value="Kathamandu, Nepal" required="" />
+          </li>
+          <li class="form-list__fifth-row">
+            <label>Work Number</label>
+            <input type="text" name="pnumber" placeholder="" value="980312432" required="" />
+            <label>Home Number</label>
+            <input type="text" name="pnumber" placeholder="" value="981413422" required="" />
+          </li>
+          <li>
+            <button type="submit" class="button--edit">Save</button>
+            <button type="submit" class="button--edit">Discard</button>
+          </li>
+        </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

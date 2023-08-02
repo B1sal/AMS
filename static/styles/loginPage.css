@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfdfdf;
+}
+
+.wrapper {
+  width: 500px;
+  height: 500px;
+  padding: 2rem 0 1rem 0;
+  margin: 250px auto;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #07001f;
+}
+
+p {
+  margin-bottom: 1.7rem;
+}
+
+.fill--out input {
+  width: 66%;
+  outline: none;
+  border: none;
+  background-color: #d8d8d82a;
+  padding: 12px 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: inset 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.recover {
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  top: 30px;
+}
+
+.remember-me {
+  text-align: left;
+  font-size: 0.8rem;
+  margin: 0.8rem 0rem 0.5rem 5.5rem;
+}
+
+.recover a {
+  text-decoration: none;
+  color: #07001f;
+}
+
+.recover a:hover {
+  text-decoration: underline;
+}
+
+.btn--login {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  width: 66%;
+  background: rgb(78, 78, 78);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn--login:hover {
+  background: #24cf5f;
+  box-shadow: 3px 3px 20px #24cf5f;
+}
+
+.passInput {
+  margin-top: 40px;
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid deepskyblue;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.popup button {
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: deepskyblue;
+  padding: 12px 25px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.popup button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 20px deepskyblue;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 80px;
+  background: #fff;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 20px;
+  color: #adadad;
+  text-decoration: none;
+}
+
+.popup .close:hover {
+  color: rgb(0, 0, 0);
+}

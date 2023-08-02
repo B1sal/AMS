@@ -1,0 +1,90 @@
+
+ 
+.modal__container h2 {
+    margin: 0;
+    font-weight: 600;
+    position: relative; 
+    left: 50px;
+    top: 30px;
+} 
+
+.button--edit {
+    margin-right: 60px;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #24cf5f;
+    padding: 12px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s; 
+}
+
+.button--edit:first-child:hover, .button--edit:first-child:active, .button--edit:first-child:focus {
+    transform: scale(1.1); 
+    box-shadow: 3px 3px 20px #24cf5f;
+}
+
+.button--edit:last-child {
+background-color: #cc3939;
+}
+
+.button--edit:last-child:hover, .button--edit:last-child:active, .button--edit:last-child:focus {
+    transform: scale(1.1); 
+    box-shadow: 3px 3px 20px #cc3939;
+}
+
+.modal__container form {
+    list-style-type: none;
+    position: relative;
+    left: 50px;
+    top: 60px;
+}
+
+.modal__container input {
+    width: 200px;
+    min-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 30px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    border: 0;
+    border-bottom: 2px solid #f0f0f0; 
+}
+
+.modal__container input:valid {
+    border-color: #24cf5f; 
+}
+
+.modal__container input:hover, .modal__container input:focus {
+    outline: none;
+    border-color: #fbcf34; 
+}
+
+.form-list__third-row input {
+    width: 60px;
+    margin: 15px;
+    position: relative;
+    left: 30px;
+}
+
+.modal__container label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .5px;
+    color: #676767; 
+}
+
+.modal__container {
+    width: 900px;
+    height: 650px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}

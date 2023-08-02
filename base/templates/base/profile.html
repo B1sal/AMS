@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main>
+  <div class="wrapper">
+    <div class="img-logo">
+
+      {% load static %}
+
+      <img src="{% static 'images/pp.png' %}" />
+    </div>
+    <h3>Haed35</h3>
+    <p>Front-end Developer</p>
+    <div class="userdata--full">
+      <div class="user-info">
+        <h4>Personal Info</h4>
+      <ul>
+        <li>
+          <span>Full Name</span> Bishal Shrestha
+        </li>
+        <li>
+          <span>Date of Birth</span> 26th August, 1995 
+        </li>
+        <li>
+          <span>Gender</span> Male
+        </li>
+        <li>
+          <span>Address</span> Kathmandu, Nepal
+        </li>
+      </ul>
+      </div>
+      <div class="contact-info">
+        <h4>Contact Details</h4>
+        <ul>
+          <li>
+            <span>Email</span> bshalxsth@gmail.com
+          </li>
+          <li>
+            <span>Work Number</span> 9803288282
+          </li>
+          <li>
+            <span>Home Number</span> 9881238368
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn">
+      
+        <a href="#" button="profile--upload"><button class="upload">Change Picture</button></a>
+      
+      
+        <a href="{% url 'edit' %}" button="profile--edit"><button class="edit">Edit Profile</button></a>
+      
+    </div>
+  </div>
+</main>
+
+{% endblock %}
